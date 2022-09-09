@@ -1,5 +1,18 @@
+import Link from "next/link";
+
 function Home() {
-  return <h1>Home Page</h1>;
+  return (
+    <>
+      <h1>Home Page</h1>
+      <Link href="/blog">
+        <a>Blog</a>
+      </Link>
+      <br />
+      <Link href="/product">
+        <a>Products</a>
+      </Link>
+    </>
+  );
 }
 
 export default Home;
